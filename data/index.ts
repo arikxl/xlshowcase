@@ -503,7 +503,7 @@ const WINDOW_CONFIG = {
 
 
 export const WELCOME_FONT_WEIGHTS = {
-    subtitle: { min: 100, max: 400, default: 100 },
+    subtitle: { min: 200, max: 400, default: 200 },
     title: { min: 400, max: 900, default: 400 },
 } as const;
 
