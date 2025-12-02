@@ -36,7 +36,7 @@ const setupTextHover = (
         return gsap.to(letter, { duration, ease: 'power2.out', fontVariationSettings: `'wght' ${weight}` });
     }
 
-    const handleMouseMove = (e: { clientX: number; })=>{
+    const handleMouseMove = (e: { clientX: number; }) => {
         const { left } = container.getBoundingClientRect();
         const mouseX = e.clientX - left;
 
@@ -50,7 +50,7 @@ const setupTextHover = (
     }
 
     const handleMouseLeave = () => {
-        letters.forEach((l)=> animationLetter(l,base,0.3))
+        letters.forEach((l) => animationLetter(l, base, 0.3))
     }
 
     container.addEventListener('mousemove', handleMouseMove);
@@ -82,26 +82,26 @@ const Welcome = () => {
             titleCleanUp();
             subTitleCleanUp();
         }
-    },[])
+    }, [])
 
-  return (
-      <section id='welcome'>
-          <p ref={subtitleRef}>
-              {renderText("Shalom, I'm Arik! A Web & Kids Developer. Welcome to my world.", 'text-3xl font-georama', 200)}
-          </p>
-          <h1 ref={titleRef} className='mt-7 '>
-              {renderText("arikxl", 'text-9xl italic font-bold font-georama')}
-          </h1>
-    
+    return (
+        <section id='welcome'>
+            <p ref={subtitleRef} className='text-white  leading-tight drop-shadow-lg font-semibold'>
+                {renderText("Shalom, I'm Arik! A Web & Kids Developer. Welcome to my world.", 'text-3xl font-georama', 200)}
+            </p>
+            <h1 ref={titleRef} className='mt-7 '>
+                {renderText("arikxl", 'text-9xl italic font-bold font-georama')}
+            </h1>
 
-          <div className='small-screen'>
-              <p>
-                  This site is designed for desktop/tablet screens only.
-              </p>
-          </div>
-      
-      </section>
-  )
+
+            <div className='small-screen'>
+                <p>
+                    This site is designed for desktop/tablet screens only.
+                </p>
+            </div>
+
+        </section>
+    )
 }
 
 export default Welcome
