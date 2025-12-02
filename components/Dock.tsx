@@ -1,6 +1,7 @@
 'use client'
 import { dockApps } from '@/data'
 import { useGSAP } from '@gsap/react';
+import  useWindowStore  from '@/store/window.js';
 import gsap from 'gsap';
 import Image from 'next/image';
 import React, { useRef } from 'react'
@@ -9,7 +10,7 @@ import { Tooltip } from 'react-tooltip';
 const Dock = () => {
 
     const dockRef = useRef<HTMLDivElement>(null);
-
+    const { openWindow,closeWindow,windows } = useWindowStore();
 
     useGSAP(() => {
         const dock = dockRef.current;
@@ -64,7 +65,18 @@ const Dock = () => {
 
     },[])
 
-    const toggleApp = () => {
+    const toggleApp = (app: { id: string; canOpen: boolean; }) => {
+        if (!app.canOpen) return;
+
+        const window = windows[app.id];
+
+        if (window.isOpen) {
+            closeWindow(app.id)
+        } else {
+            openWindow(app.id)
+        }
+
+        console.table(windows)
 
     }
 
