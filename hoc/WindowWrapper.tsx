@@ -1,19 +1,23 @@
+'use client'
+
+import React, { ComponentType, FunctionComponent, useRef } from 'react'
+
 import useWindowStore from '@/store/window'
-import React, { useRef } from 'react'
-import { JSX } from 'react/jsx-runtime';
 
-const WindowWrapper = (Component, windowKey) => {
+const WindowWrapper = <P extends object>(
+  Component: ComponentType<P>,
+  windowKey: string) => {
 
-  const Wrapped = (props: JSX.IntrinsicAttributes) => {
+  const Wrapped: FunctionComponent<P> = (props) => {
     const { focusWindow, windows } = useWindowStore();
     const { isOpen, zIndex } = windows[windowKey];
-    const ref = useRef(null);
+    const ref = useRef<HTMLDivElement>(null);
 
 
     return <section id={windowKey} ref={ref}
       style={{ zIndex }} className='absolute'
     >
-      <Component {...props} />
+      <Component {...(props as P)} />
     </section>
   }
 
