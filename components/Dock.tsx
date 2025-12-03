@@ -1,7 +1,7 @@
 'use client'
 import { dockApps } from '@/data'
+import useWindowStore from '@/store/window';
 import { useGSAP } from '@gsap/react';
-import  useWindowStore  from '@/store/window.js';
 import gsap from 'gsap';
 import Image from 'next/image';
 import React, { useRef } from 'react'

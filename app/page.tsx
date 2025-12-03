@@ -1,7 +1,11 @@
 import Dock from "@/components/Dock";
 import Navbar from "@/components/Navbar";
 import Welcome from "@/components/Welcome";
-import Image from "next/image";
+import gsap from "gsap";
+import { Draggable } from "gsap/Draggable";
+gsap.registerPlugin(Draggable);
+
+
 
 export default function Home() {
   return (

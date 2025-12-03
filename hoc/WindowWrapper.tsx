@@ -1,0 +1,26 @@
+import useWindowStore from '@/store/window'
+import React, { useRef } from 'react'
+import { JSX } from 'react/jsx-runtime';
+
+const WindowWrapper = (Component, windowKey) => {
+
+  const Wrapped = (props: JSX.IntrinsicAttributes) => {
+    const { focusWindow, windows } = useWindowStore();
+    const { isOpen, zIndex } = windows[windowKey];
+    const ref = useRef(null);
+
+
+    return <section id={windowKey} ref={ref}
+      style={{ zIndex }} className='absolute'
+    >
+      <Component {...props} />
+    </section>
+  }
+
+  Wrapped.displayName = `WindowWrapper(${Component.displayName || Component.name || 'Component'})`;
+
+
+  return Wrapped;
+}
+
+export default WindowWrapper
