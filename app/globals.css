@@ -70,7 +70,7 @@ body {
     @apply text-gray-200 flex flex-col justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none max-sm:h-screen max-sm:w-full max-sm:px-10;
 
     .small-screen {
-      @apply sm:hidden m-7 mt-20 bg-red-300/20 backdrop-blur-lg p-3 rounded-md absolute top-10 ;
+      @apply sm:hidden m-7 mt-20 bg-red-300/20 backdrop-blur-lg p-3 rounded-md absolute top-10;
 
       p {
         @apply flex-1 text-[16px] text-center font-roboto text-gray-400;
@@ -102,7 +102,7 @@ body {
     @apply flex gap-2;
 
     .close {
-      @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer;
+      @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer hover:after:content-['x'] flex items-center justify-center hover:bg-[#ff6157] text-white pb-0.5;
     }
 
     .minimize {
@@ -130,21 +130,25 @@ body {
     }
 
     .blog {
-      @apply bg-white p-10 max-w-3xl mx-auto;
+      @apply bg-white p-10 max-w-3xl mx-auto overflow-y-auto;
 
       h2 {
         @apply text-xl font-bold text-pink-600 mb-10;
       }
 
       .blog-post {
-        @apply grid grid-cols-12 space-x-5;
+        @apply grid grid-cols-18 space-x-1;
 
         img {
           @apply size-full rounded-md object-cover;
         }
 
+        /* iframe {
+          @apply  rounded-md object-cover ;
+        } */
+
         .content {
-          @apply col-span-10 space-y-3;
+          @apply col-span-10 space-y-3 justify-center flex flex-col;
 
           p {
             @apply text-xs text-gray-500;
@@ -395,10 +399,10 @@ body {
   }
 }
 
-.icon-hover{
+.icon-hover {
   /* background-color: white; */
-  cursor:pointer;
-  padding:  5px;
+  cursor: pointer;
+  padding: 5px;
   border-radius: 10px;
   height: 30px;
   display: flex;
@@ -406,7 +410,7 @@ body {
   aspect-ratio: 1;
 }
 
-.icon-hover:hover{
+.icon-hover:hover {
   background-color: rgba(255, 255, 255, 0.5);
 
 }

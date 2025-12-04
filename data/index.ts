@@ -43,7 +43,7 @@ const dockApps = [
     },
     {
         id: "safari",
-        name: "Articles", // was "Safari"
+        name: "Talks", // was "Safari"
         icon: "safari.png",
         canOpen: true,
     },
@@ -73,28 +73,39 @@ const dockApps = [
     },
 ];
 
-const blogPosts = [
+const talkPosts = [
     {
-        id: 1,
-        date: "Sep 2, 2025",
-        title:
-            "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-        image: "/images/blog1.png",
-        link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+        id: 4,
+        date: "01/01/2026",
+        title: "My Youtube Channel - 100 JS Projects",
+        image: "",
+        iframeSrc: 'https://www.youtube.com/embed/videoseries?si=NjIM18jXFv-I1-Bv&amp;list=PLzuqPsaGWZS4mhQbSHgJHZW_UdrgMWZjh',
+        link: "https://youtube.com/playlist?list=PLzuqPsaGWZS4mhQbSHgJHZW_UdrgMWZjh&si=64PNQ2wS1O13EVRa",
     },
     {
-        id: 2,
-        date: "Aug 28, 2025",
-        title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-        image: "/images/blog2.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+        id: 1,
+        date: "24/01/2024",
+        iframeSrc: 'https://www.youtube.com/embed/4Y-QlJ3dFc8?si=RMLTjnxnxDP0BZ0N',
+        title:
+        "My AI Adventure - Negev Web Developers",
+        image: "https://res.cloudinary.com/arikxl/image/upload/v1764859339/Ella2023/gv8tr2nylvjig2kqrktp.png",
+        link: "https://www.youtube.com/watch?v=4Y-QlJ3dFc8&t=1s",
     },
     {
         id: 3,
-        date: "Aug 15, 2025",
-        title: "The Ultimate Guide to Mastering GSAP Animations",
-        image: "/images/blog3.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+        date: "19/12/2024",
+        title: "My AI Adventure 2  - JavaScript Israel",
+        image: "",
+        iframeSrc: 'https://www.youtube.com/embed/KgV-L2jiU8Y?si=bZ8nCVCD0tJ99kt3',
+        link: "https://www.youtube.com/watch?v=KgV-L2jiU8Y&t=1s",
+    },
+    {
+        id: 2,
+        date: "06/07/2023",
+        title: "Programming Playtime - תכנות זה משחק ילדים",
+        image: "",
+        iframeSrc: 'https://www.youtube.com/embed/FC9fXjr-WMo?si=VG6j6JCIZrC38AvC',
+        link: "https://www.youtube.com/watch?v=FC9fXjr-WMo&t=1s",
     },
 ];
 
@@ -206,7 +217,7 @@ const gallery = [
 export {
     navIcons,
     dockApps,
-    blogPosts,
+    talkPosts,
     techStack,
     socials,
     photosLinks,

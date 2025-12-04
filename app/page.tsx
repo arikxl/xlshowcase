@@ -6,6 +6,7 @@ import Dock from "@/components/Dock";
 import Navbar from "@/components/Navbar";
 import Welcome from "@/components/Welcome";
 import Terminal from "@/windows/Terminal";
+import Safari from "@/windows/Safari";
 
 gsap.registerPlugin(Draggable);
 
@@ -19,6 +20,7 @@ export default function Home() {
     
       
       <Terminal />
+      <Safari />
     </main>
   );
 }
