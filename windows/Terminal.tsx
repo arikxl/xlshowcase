@@ -2,18 +2,19 @@
 
 import { techStack } from '@/data'
 import WindowWrapper from '@/hoc/WindowWrapper'
+import WindowControls from '@/components/WindowControls'
 
 const Terminal = () => {
     return (
         <>
             <div id='window-header'>
-                <p>Window Controls</p>
+                <WindowControls target='terminal'/>
                 <h2>Tech Stack</h2>
             </div>
 
             <div className='techstack'>
                 <p>
-                    <span className='font-bold'>@arikxl %</span>show tech stack
+                    <span className='font-bold'>@arikxl %&nbsp;</span>show tech stack
                 </p>
 
                 <div className='label'>
