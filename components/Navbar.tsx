@@ -1,9 +1,16 @@
+'use client'
+
 import Image from 'next/image'
 
 import Time from './Time'
 import { navIcons, navList } from '@/data'
+import useWindowStore from '@/store/window'
 
 const Navbar = () => {
+
+    const { openWindow } = useWindowStore();
+
+
     return (
         <nav className=''>
             <div>
@@ -11,8 +18,10 @@ const Navbar = () => {
                 <p className='font-bold'>arikxl</p>
                 <ul>
                     {
-                        navList.map(({id,title}) => (
-                            <li key={id}><p>{title}</p></li>
+                        navList.map(({id,title,type}) => (
+                            <li key={id} onClick={()=>openWindow(type)}>
+                                <p>{title}</p>
+                            </li>
                         ))
                     }
                 </ul>

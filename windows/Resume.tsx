@@ -1,0 +1,44 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+'use client'
+import WindowControls from '@/components/WindowControls'
+import WindowWrapper from '@/hoc/WindowWrapper'
+import { Download } from 'lucide-react'
+import React from 'react'
+
+import { Document, Page, pdfjs } from 'react-pdf';
+
+// @ts-expect-error
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+// @ts-expect-error
+import 'react-pdf/dist/Page/TextLayer.css';
+
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+    'pdfjs-dist/build/pdf.worker.min.mjs',
+    import.meta.url,
+).toString();
+
+const Resume = () => {
+    return (
+        <>
+            <div id='window-header'>
+                <WindowControls target='resume' />
+                <h2>Resume.pdf</h2>
+                
+                <a href='files/Arik Alexandrov.pdf' download
+                    className='cursor-pointer' title='Download resume'
+                >
+                <Download className='icon'/>
+                </a>
+            </div>
+
+            <Document file="files/Arik Alexandrov.pdf">
+                <Page pageNumber={1} renderTextLayer renderAnnotationLayer/>
+            </Document>
+        </>
+    )
+}
+
+
+const ResumeWindow = WindowWrapper(Resume, 'resume');
+export default ResumeWindow;

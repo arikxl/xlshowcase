@@ -1,15 +1,23 @@
 export const navList = [
     {
         id: 1001,
-        title: 'Showcase'
+        title: 'Showcase',
+        type: 'showcase',
     },
     {
         id: 1002,
-        title: 'Contact'
+        title: 'Contact',
+        type: 'contact',
     },
     {
         id: 1003,
-        title: 'Projects'
+        title: 'Projects',
+        type:'finder'
+    },
+    {
+        id: 1005,
+        title: 'Resume',
+        type:'resume'
     },
 ]
 
