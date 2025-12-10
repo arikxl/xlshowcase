@@ -185,7 +185,7 @@ body {
           }
 
           h3 {
-            @apply font-semibold text-[#00A154] w-32 ms-5;
+            @apply font-semibold text-[#00A154] w-40 mr-4 ms-5;
           }
 
           ul {

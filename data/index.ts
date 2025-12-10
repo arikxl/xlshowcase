@@ -123,24 +123,28 @@ const techStack = [
         items: ["React.js", "Next.js", "TypeScript"],
     },
     {
-        category: "Mobile",
-        items: ["React Native", "Expo"],
-    },
-    {
-        category: "Styling",
-        items: ["Tailwind CSS", "Sass", "CSS"],
-    },
-    {
         category: "Backend",
-        items: ["Node.js", "Express", "NestJS", "Hono"],
+        items: ["Node.js", "Express", "Python"],
     },
     {
-        category: "Database",
-        items: ["MongoDB", "PostgreSQL"],
+        category: "Database & ORM",
+        items: ["MongoDB", "PostgreSQL","Prisma"],
     },
     {
-        category: "Dev Tools",
-        items: ["Git", "GitHub", "Docker"],
+        category: "Styling & Animation",
+        items: ["Tailwind CSS", "Framer Motion", "GSAP"],
+    },
+    {
+        category: "Design & Creative",
+        items: ["Figma", "Canva", "Midjourney"],
+    },
+    {
+        category: "AI Integration", 
+        items: [
+            "Vercel AI SDK",
+            "OpenAI API",   
+            "v0.dev"       
+        ],
     },
 ];
 
