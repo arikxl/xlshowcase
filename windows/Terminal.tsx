@@ -3,6 +3,7 @@
 import { techStack } from '@/data'
 import WindowWrapper from '@/hoc/WindowWrapper'
 import WindowControls from '@/components/WindowControls'
+import { SquareCode } from 'lucide-react'
 
 const Terminal = () => {
     return (
@@ -10,6 +11,7 @@ const Terminal = () => {
             <div id='window-header'>
                 <WindowControls target='terminal'/>
                 <h2>Tech Stack</h2>
+                <SquareCode className='icon' />
             </div>
 
             <div className='techstack'>

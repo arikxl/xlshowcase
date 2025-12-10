@@ -1,25 +1,21 @@
 import { LocationItem } from "@/types/types";
 
 export const navList = [
-    {
-        id: 1001,
-        title: 'Showcase',
-        type: 'showcase',
-    },
-    {
-        id: 1002,
-        title: 'Contact',
-        type: 'contact',
-    },
+
     {
         id: 1003,
-        title: 'Projects',
+        title: 'Apps',
         type:'finder'
     },
     {
         id: 1005,
         title: 'Resume',
         type:'resume'
+    },
+    {
+        id: 1002,
+        title: 'Contact',
+        type: 'contact',
     },
 ]
 
@@ -47,7 +43,7 @@ const navIcons = [
 const dockApps = [
     {
         id: "finder",
-        name: "Portfolio", // was "Finder"
+        name: "Showcase", // was "Finder"
         icon: "finder.png",
         canOpen: true,
     },
@@ -155,29 +151,29 @@ const socials = [
         id: 1,
         text: "Github",
         icon: "/icons/github.svg",
-        bg: "#f4656b",
-        link: "https://github.com/JavaScript-Mastery-Pro",
+        bg: "#24292e",
+        link: "https://github.com/arikxl",
     },
     {
         id: 2,
-        text: "Platform",
-        icon: "/icons/atom.svg",
-        bg: "#4bcb63",
-        link: "https://jsmastery.com/",
+        text: "Email",
+        icon: "/icons/gmail-white.svg",
+        bg: "#EA4335",
+        link: "mailto:arikxl@gmail.com?subject=Shalom%20Arik",
     },
     {
         id: 3,
-        text: "Twitter/X",
-        icon: "/icons/twitter.svg",
-        bg: "#ff866b",
-        link: "https://x.com/jsmasterypro",
+        text: "Whatsapp",
+        icon: "/icons/whatsapp.svg",
+        bg: "#25D366",
+        link: "https://wa.me/972506860169",
     },
     {
         id: 4,
         text: "LinkedIn",
         icon: "/icons/linkedin.svg",
-        bg: "#05b6f6",
-        link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+        bg: "#0077B5",
+        link: "https://www.linkedin.com/in/arik-alexandrov/",
     },
 ];
 

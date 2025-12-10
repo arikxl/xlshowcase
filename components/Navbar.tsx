@@ -3,8 +3,8 @@
 import Image from 'next/image'
 
 import Time from './Time'
-import { navIcons, navList } from '@/data'
 import useWindowStore from '@/store/window'
+import { navIcons, navList } from '@/data'
 
 const Navbar = () => {
 

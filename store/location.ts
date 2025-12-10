@@ -25,6 +25,9 @@ const useLocationStore = create<LocationState>()(
         setActiveLocation: (location) =>
             set((state) => {
                 state.activeLocation = location;
+                if (location === undefined) return;
+                state.activeLocation = location;
+
             }),
 
         resetActiveLocation: () =>

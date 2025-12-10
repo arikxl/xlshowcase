@@ -97,9 +97,9 @@ body {
   #window-controls {
     @apply flex gap-2;
 
-    .close {
-      @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer hover:after:content-['x'] flex items-center justify-center hover:bg-[#ff6157] text-white pb-0.5;
-    }
+.close {
+  @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer flex items-center justify-center text-white text-[10px] leading-none hover:after:content-['x'];
+}
 
     .minimize {
       @apply size-3.5 rounded-full bg-[#ffc030];

@@ -4,14 +4,15 @@ import Image from "next/image";
 import { Draggable } from "gsap/Draggable";
 
 import Dock from "@/components/Dock";
+import Text from "@/windows/Text";
 import Safari from "@/windows/Safari";
 import Navbar from "@/components/Navbar";
 import Finder from "@/windows/Finder";
 import Resume from "@/windows/Resume";
 import Welcome from "@/components/Welcome";
 import bgImage from "@/public/images/wallpaper2.png";
+import Contact from "@/windows/Contact";
 import Terminal from "@/windows/Terminal";
-import Text from "@/windows/Text";
 import ImageWin from "@/windows/ImageWin";
 
 gsap.registerPlugin(Draggable);
@@ -52,6 +53,7 @@ export default function Home() {
       <Finder />
       <Text />
       <ImageWin />
+      <Contact />
     </main>
   );
 }
