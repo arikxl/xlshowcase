@@ -7,16 +7,22 @@ import { Search } from 'lucide-react';
 import { locations } from '@/data';
 import { LocationItem } from '@/types/types';
 import WindowWrapper from '@/hoc/WindowWrapper';
+import useWindowStore from '@/store/window';
 import WindowControls from '@/components/WindowControls';
 import useLocationStore from '@/store/location';
 
 const Finder = () => {
 
+    const { openWindow} = useWindowStore();
 
     const { activeLocation, setActiveLocation } = useLocationStore();
 
-    const openItem = (item) => {
-        
+    const openItem = (item: LocationItem) => {
+        if (item.fileType === 'pdf') return openWindow('resume');
+        if (item.kind === 'folder') return setActiveLocation(item);
+        if (['git', 'url'].includes(item.fileType) && item.href) return window.open(item.href, '_blank');
+    
+        openWindow(`${item.fileType}${item.kind}`, item);
     }
 
     const renderList = (name: string, items: LocationItem[]) => (
@@ -48,18 +54,18 @@ const Finder = () => {
             <div className='bg-white flex h-full'>
                 <div className='sidebar'>
                     {renderList('Favorites', Object.values(locations) as unknown as LocationItem[])}
-                    {locations.work?.children && renderList('Work', locations.work.children)}
+                    {locations.work?.children && renderList('My Apps', locations.work.children)}
                 </div>
 
                 <ul className='content'>
                     {
                         activeLocation?.children?.map((item) => (
                             <li key={item.id} className={item.position}
-                            onClick={()=>openItem(item)}
+                                onClick={() => openItem(item)}
                             >
                                 <Image src={item.icon} alt={item.name}
                                     width={100} height={100} />
-                                <p>{item.name }</p>
+                                <p>{item.name}</p>
                             </li>
                         ))
                     }

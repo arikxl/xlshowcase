@@ -340,7 +340,7 @@ body {
         @apply absolute flex items-center flex-col gap-3;
 
         img {
-          @apply object-contain object-center size-16 relative group-hover:scale-105;
+          @apply object-contain object-center size-16 relative group-hover:scale-105 cursor-pointer;
         }
 
         p {

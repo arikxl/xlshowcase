@@ -11,6 +11,8 @@ import Resume from "@/windows/Resume";
 import Welcome from "@/components/Welcome";
 import bgImage from "@/public/images/wallpaper2.png";
 import Terminal from "@/windows/Terminal";
+import Text from "@/windows/Text";
+import ImageWin from "@/windows/ImageWin";
 
 gsap.registerPlugin(Draggable);
 
@@ -48,6 +50,8 @@ export default function Home() {
       <Safari />
       <Resume />
       <Finder />
+      <Text />
+      <ImageWin />
     </main>
   );
 }
