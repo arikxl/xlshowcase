@@ -26,3 +26,11 @@ export type WindowStore = {
     closeWindow: (windowKey: string) => void;
     focusWindow: (windowKey: string) => void;
 };
+
+export type LocationItem = {
+    id: string | number;
+    name: string;
+    icon: string;
+    children?: LocationItem[];
+    [key: string]: any;
+};

@@ -6,6 +6,7 @@ import { Draggable } from "gsap/Draggable";
 import Dock from "@/components/Dock";
 import Safari from "@/windows/Safari";
 import Navbar from "@/components/Navbar";
+import Finder from "@/windows/Finder";
 import Resume from "@/windows/Resume";
 import Welcome from "@/components/Welcome";
 import bgImage from "@/public/images/wallpaper2.png";
@@ -46,6 +47,7 @@ export default function Home() {
       <Terminal />
       <Safari />
       <Resume />
+      <Finder />
     </main>
   );
 }

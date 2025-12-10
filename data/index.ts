@@ -1,3 +1,5 @@
+import { LocationItem } from "@/types/types";
+
 export const navList = [
     {
         id: 1001,
@@ -504,7 +506,7 @@ const TRASH_LOCATION = {
     ],
 };
 
-export const locations = {
+export const locations: Record<string, LocationItem> = {
     work: WORK_LOCATION,
     about: ABOUT_LOCATION,
     resume: RESUME_LOCATION,
