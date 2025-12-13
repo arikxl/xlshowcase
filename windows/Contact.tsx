@@ -17,9 +17,9 @@ const Contact = () => {
 
 
             <div className='p-5 space-y-5'>
-                <Image alt='Arik Alexandrov' src='/images/adrian.jpg'
-                    width={50} height={50}
-                    className='w-20 rounded-full'
+                <Image alt='Arik Alexandrov' src='/images/arik.jpg'
+                    width={100} height={100}
+                    className='w-20 aspect-square object-cover rounded-full'
                 />
 
                 <h3>Let&lsquo;s Connect</h3>

@@ -34,7 +34,7 @@ const HomeComp = () => {
         projects.map((proj: LocationItem ) => (
           <li key={proj.id}
             onClick={()=>handle1openProjectFinder(proj)}
-            className={clsx("group folder", proj.windowPosition)}
+            className={clsx("group folder w-20 flex flex-col items-center", proj.windowPosition)}
           >
             <Image alt={proj.name} src='/images/folder.png' width={50} height={40} />
             <p>{proj.name }</p>
