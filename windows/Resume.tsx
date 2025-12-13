@@ -1,42 +1,35 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 'use client'
+
+import React from 'react'
 import WindowControls from '@/components/WindowControls'
 import WindowWrapper from '@/hoc/WindowWrapper'
 import { Download } from 'lucide-react'
-import React from 'react'
-
-import { Document, Page, pdfjs } from 'react-pdf';
-
-import 'react-pdf/dist/Page/AnnotationLayer.css';
-import 'react-pdf/dist/Page/TextLayer.css';
-
-
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.mjs',
-    import.meta.url,
-).toString();
 
 const Resume = () => {
+    // וודא ששם הקובץ הוא resume.pdf בתיקייה public/files
+    const fileUrl = "/files/Arik Alexandrov.pdf";
+
     return (
-        <>
+        <div className='w-100 aspect-auto'>
+            {/* Header */}
             <div id='window-header'>
                 <WindowControls target='resume' />
                 <h2>Resume.pdf</h2>
-                
-                <a href='files/Arik Alexandrov.pdf' download
-                    className='cursor-pointer' title='Download resume'
-                >
-                <Download className='icon'/>
+                <a href={fileUrl} download className='cursor-pointer' title='Download resume'>
+                    <Download className='icon' />
                 </a>
             </div>
 
-            <Document file="files/Arik Alexandrov.pdf">
-                <Page pageNumber={1} renderTextLayer renderAnnotationLayer/>
-            </Document>
-        </>
+            <div className="flex-1 w-full h-160 bg-gray-100 overflow-hidden">
+                <iframe
+                    src={fileUrl}
+                    className="w-full h-full"
+                    title="Arik Alexandrov Resume PDF"
+                />
+            </div>
+        </div>
     )
 }
-
 
 const ResumeWindow = WindowWrapper(Resume, 'resume');
 export default ResumeWindow;
