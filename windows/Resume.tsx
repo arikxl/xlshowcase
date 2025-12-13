@@ -7,9 +7,7 @@ import React from 'react'
 
 import { Document, Page, pdfjs } from 'react-pdf';
 
-// @ts-expect-error
 import 'react-pdf/dist/Page/AnnotationLayer.css';
-// @ts-expect-error
 import 'react-pdf/dist/Page/TextLayer.css';
 
 

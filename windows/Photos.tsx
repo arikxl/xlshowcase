@@ -1,12 +1,11 @@
 'use client'
+import Image from 'next/image'
+import { Mail, Search } from 'lucide-react'
 
-import WindowControls from '@/components/WindowControls'
-import { gallery, photosLinks } from '@/data'
 import WindowWrapper from '@/hoc/WindowWrapper'
 import useWindowStore from '@/store/window'
-import { Mail, Search } from 'lucide-react'
-import Image from 'next/image'
-import React from 'react'
+import WindowControls from '@/components/WindowControls'
+import { gallery, photosLinks } from '@/data'
 
 const Photos = () => {
 
