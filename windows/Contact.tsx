@@ -24,8 +24,8 @@ const Contact = () => {
 
                 <h3>Let&lsquo;s Connect</h3>
                 <p>Got an idea? Or just wanna talk?</p>
-                <div className="leading-tight mt-4"> 
-                    <p className="">I&rsquo;m here,</p> 
+                <div className="leading-tight mt-4">
+                    <p className="">I&rsquo;m here,</p>
                     <p className="font-semibold text-lg">Arik Alexandrov.</p>
                 </div>
 
@@ -35,8 +35,8 @@ const Contact = () => {
                             <a href={link} target='_blank' rel='noopener noreferrer' >
                                 <Image alt={text} src={icon} width={100} height={100}
                                     className='size-5' />
+                                {text}
                             </a>
-                            {text}
                         </li>
                     ))}
                 </ul>

@@ -14,6 +14,8 @@ import bgImage from "@/public/images/wallpaper2.png";
 import Contact from "@/windows/Contact";
 import Terminal from "@/windows/Terminal";
 import ImageWin from "@/windows/ImageWin";
+import HomeComp from "@/components/HomeComp";
+import Photos from "@/windows/Photos";
 
 gsap.registerPlugin(Draggable);
 
@@ -45,8 +47,9 @@ export default function Home() {
 
       <Welcome />
       <Dock />
-
-
+      <HomeComp/>
+        
+      
       <Terminal />
       <Safari />
       <Resume />
@@ -54,6 +57,7 @@ export default function Home() {
       <Text />
       <ImageWin />
       <Contact />
+      <Photos/>
     </main>
   );
 }
