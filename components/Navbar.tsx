@@ -14,7 +14,7 @@ const Navbar = () => {
     return (
         <nav className=''>
             <div>
-                <Image alt='apple logo' src={'/images/logo.svg'} width={30} height={30} />
+                <Image alt='apple logo' src={'/images/logo1111.png'} width={30} height={30} />
                 <p className='font-bold'>arikxl</p>
                 <ul>
                     {

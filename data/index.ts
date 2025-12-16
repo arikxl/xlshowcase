@@ -775,7 +775,7 @@ const ABOUT_LOCATION = {
             subtitle: "Meet the Developer Behind the Code",
             image: "/images/arik2.jpg",
             description: [
-                "Hey! I’m Arik Alexandrov, a Full Stack Developer and Instructor who loves combining logic with creativity.",
+                "Shalom! I’m Arik Alexandrov, a Full Stack Developer and Instructor who loves combining logic with creativity.",
                 "I have a huge passion for UI and smooth animations. I love making websites that feel alive.",
                 "I’m also a big fan of AI tools, using them to code faster and help my students learn better.",
                 "When I’m finally offline, I’m usually gaming, hanging out with friends, or just recharging 🔋"
