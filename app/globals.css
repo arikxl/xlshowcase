@@ -97,9 +97,9 @@ body {
   #window-controls {
     @apply flex gap-2;
 
-.close {
-  @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer flex items-center justify-center text-white text-[10px] leading-none hover:after:content-['x'];
-}
+    .close {
+      @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer flex items-center justify-center text-white text-[10px] leading-none hover:after:content-['x'];
+    }
 
     .minimize {
       @apply size-3.5 rounded-full bg-[#ffc030];
@@ -235,6 +235,27 @@ body {
       }
     }
   }
+
+
+  #settings {
+    
+    @apply max-w-2xl absolute top-20 left-5/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    .icon {
+      @apply p-1 w-16 hover:bg-gray-200 rounded hover:cursor-default;
+    }
+
+    button {
+      cursor: pointer;
+    }
+    
+    h2 {
+      @apply font-bold text-sm text-center w-full;
+    }
+
+
+  }
+
+  
 
   #photos {
     @apply max-w-3xl absolute top-96 left-1/2 -translate-y-1/2 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;

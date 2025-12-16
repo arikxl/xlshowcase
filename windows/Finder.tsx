@@ -14,14 +14,15 @@ import AccessDeniedMac from '@/components/AccessDeniedMac';
 
 const Finder = () => {
     const user = false;
-    const noPerm = 'work KidKod עתידים טופ אדיו'
+    const noPerm = 'work KidKod עתידים טופ אדיו';
+    
     const { openWindow } = useWindowStore();
 
     const { activeLocation, setActiveLocation } = useLocationStore();
-    console.log(activeLocation?.name)
+    // console.log(activeLocation?.name)
 
     const openItem = (item: LocationItem) => {
-        console.log(item)
+        // console.log(item)
         if (item.fileType === 'pdf') return openWindow('resume');
         if (item.kind === 'folder') return setActiveLocation(item);
         if (['git', 'url'].includes(item.fileType) && item.href) return window.open(item.href, '_blank');

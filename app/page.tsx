@@ -1,3 +1,4 @@
+'use client'
 
 import gsap from "gsap";
 import Image from "next/image";
@@ -8,19 +9,23 @@ import Text from "@/windows/Text";
 import Safari from "@/windows/Safari";
 import Navbar from "@/components/Navbar";
 import Finder from "@/windows/Finder";
+import Photos from "@/windows/Photos";
 import Resume from "@/windows/Resume";
 import Welcome from "@/components/Welcome";
-import bgImage from "@/public/images/wallpaper2.png";
 import Contact from "@/windows/Contact";
 import Terminal from "@/windows/Terminal";
 import ImageWin from "@/windows/ImageWin";
+import Settings from "@/windows/Settings";
 import HomeComp from "@/components/HomeComp";
-import Photos from "@/windows/Photos";
+import useSystemStore from "@/store/system";
 
 gsap.registerPlugin(Draggable);
 
 
 export default function Home() {
+
+  const { wallpaper } = useSystemStore();
+
   return (
     <main style={{ position: "relative", height: "100vh", overflow: "hidden" }}>
       <div style={{
@@ -31,9 +36,10 @@ export default function Home() {
         zIndex: -1,
       }}>
         <Image
+          key={wallpaper}
           alt="Background Wallpaper"
-          src={bgImage}
-          placeholder="blur"
+          src={wallpaper}
+          placeholder="empty"
           fill
           sizes="100vw"
           style={{
@@ -56,7 +62,8 @@ export default function Home() {
       <Text />
       <ImageWin />
       <Contact />
-      <Photos/>
+      <Photos />
+      <Settings/>
     </main>
   );
 }

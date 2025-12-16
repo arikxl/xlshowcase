@@ -8,11 +8,15 @@ import { Tooltip } from 'react-tooltip';
 
 import { dockApps } from '@/data'
 import useWindowStore from '@/store/window';
+import useSystemStore from '@/store/system';
 
 const Dock = () => {
 
     const dockRef = useRef<HTMLDivElement>(null);
-    const { openWindow,closeWindow,windows } = useWindowStore();
+    const { openWindow, closeWindow, windows } = useWindowStore();
+    const { theme } = useSystemStore();
+
+    const isDarkMode = theme === 'dark';
 
     useGSAP(() => {
         const dock = dockRef.current;
@@ -78,13 +82,15 @@ const Dock = () => {
             openWindow(app.id)
         }
 
-        console.table(windows)
+        // console.table(windows)
 
     }
 
     return (
         <section id='dock'>
-            <div ref={dockRef} className='dock-container'>
+            <div ref={dockRef}
+                className={`transition-colors duration-300 dock-container ${isDarkMode ? 'bg-gray-800/50 text-white' : 'bg-white/50 text-black'}`}
+                >
                 {
                     dockApps.map(({ name, id, icon, canOpen }) => (
                         <div key={id} className='relative flex justify-center'>

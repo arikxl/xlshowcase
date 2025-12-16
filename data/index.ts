@@ -80,8 +80,14 @@ const dockApps = [
         canOpen: true,
     },
     {
+        id: "settings",
+        name: "Settings", 
+        icon: "settings.png",
+        canOpen: true,
+    },
+    {
         id: "trash",
-        name: "Archive", // was "Trash"
+        name: "Archive", 
         icon: "trash.png",
         canOpen: false,
     },
@@ -850,6 +856,7 @@ const INITIAL_Z_INDEX = 1000;
 const WINDOW_CONFIG = {
     finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    settings: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
@@ -863,5 +870,14 @@ export const WELCOME_FONT_WEIGHTS = {
     subtitle: { min: 200, max: 400, default: 200 },
     title: { min: 400, max: 900, default: 400 },
 } as const;
+
+export const wallpapers = [
+    { id: 1, name: "Ventura", src: "/images/wallpaper.png" },
+    { id: 2, name: "Sierra Blue", src: "/images/wallpaper2.png" },
+    { id: 3, name: "Big Sur", src: "/images/wallpaper3.jpg" },
+    { id: 4, name: "Monterey", src: "/images/wallpaper4.jpg" },
+    { id: 5, name: "Mavericks", src: "/images/wallpaper5.jpg" },
+    { id: 6, name: "Lake Tahoe", src: "/images/wallpaper6.jpeg" },
+];
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };

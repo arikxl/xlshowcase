@@ -1,5 +1,4 @@
 import useWindowStore from '@/store/window';
-import React from 'react';
 
 const AccessDeniedMac = () => {
 
@@ -28,23 +27,17 @@ const AccessDeniedMac = () => {
                     Access Denied
                 </h2>
 
-                {/* Description */}
                 <p className="text-gray-600 text-[13px] leading-relaxed mb-6 font-sans">
                     You do not have permission to view this content. <br />
                     Please login or contact me(Arik).
                 </p>
 
-                {/* Buttons */}
                 <div className="flex justify-end gap-2 w-full">
-                    {/* Secondary Button (Optional) */}
-                    {/* <button className="flex-1 px-4 py-1.5 bg-white border border-gray-300 rounded-lg text-[13px] font-medium text-gray-700 shadow-sm hover:bg-gray-50 active:bg-gray-100 transition-colors">
-            Details
-          </button> */}
-
-                    {/* Primary Action Button (Blue) */}
+            
                     <button
                         onClick={() => closeWindow('finder')} 
-                        className="w-full px-4 py-1.5 bg-[#007AFF] hover:bg-[#0062cc] active:bg-[#0051a8] text-white text-[13px] font-medium rounded-lg shadow-sm transition-colors duration-150"
+                        aria-label='ok-close'
+                        className="w-full px-4 py-1.5 cursor-pointer bg-[#007AFF] hover:bg-[#0062cc] active:bg-[#0051a8] text-white text-[13px] font-medium rounded-lg shadow-sm transition-colors duration-150"
                     >
                         OK
                     </button>
