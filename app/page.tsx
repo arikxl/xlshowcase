@@ -34,7 +34,6 @@ export default function Home() {
           alt="Background Wallpaper"
           src={bgImage}
           placeholder="blur"
-          quality={100}
           fill
           sizes="100vw"
           style={{

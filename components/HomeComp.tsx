@@ -11,10 +11,9 @@ import { LocationItem } from '@/types/types';
 
 
 
-const projects = locations.work?.links ?? [];
+const projects = locations.work?.children ?? [];
 
 const HomeComp = () => {
-
   const { openWindow } = useWindowStore();
   const { setActiveLocation } = useLocationStore();
 

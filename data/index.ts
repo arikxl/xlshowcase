@@ -234,9 +234,9 @@ export {
     gallery,
 };
 
-const WORK_LOCATION = {
+const APPS_LOCATION = {
     id: 1,
-    type: "work",
+    type: "apps",
     name: "Apps",
     icon: "/icons/work.svg",
     kind: "folder",
@@ -562,6 +562,175 @@ const WORK_LOCATION = {
     ],
 };
 
+
+
+const WORK_LOCATION = {
+    id: 11,
+    type: "work",
+    name: "Work",
+    icon: "/icons/job.svg",
+    kind: "folder",
+    children: [
+        {
+            id: 15,
+            name: "KidKod",
+            icon: "/images/folder.png",
+            kind: "folder",
+            position: "top-20 left-5", // icon position inside Finder
+            windowPosition: "top-[5vh] left-5", // optional: Finder window position
+            children: [
+                {
+                    id: 1,
+                    name: "Nike Project.txt",
+                    icon: "/images/txt.png",
+                    kind: "file",
+                    fileType: "txt",
+                    position: "top-5 left-10",
+                    description: [
+                        "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
+                        "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
+                        "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
+                        "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+                    ],
+                },
+                {
+                    id: 2,
+                    name: "nike.com",
+                    icon: "/images/safari.png",
+                    kind: "file",
+                    fileType: "url",
+                    href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+                    position: "top-10 right-30",
+                },
+                {
+                    id: 4,
+                    name: "nike.png",
+                    icon: "/images/image.png",
+                    kind: "file",
+                    fileType: "img",
+                    position: "top-52 right-80",
+                    imageUrl: "/images/project-1.png",
+                },
+                {
+                    id: 5,
+                    name: "Code.git",
+                    icon: "/images/plain2.png",
+                    kind: "file",
+                    fileType: "git",
+                    href: "https://google.com",
+                    position: "top-60 right-50",
+                },
+            ],
+        },
+
+        // ▶ Project 2
+        {
+            id: 16,
+            name: "עתידים",
+            icon: "/images/folder.png",
+            kind: "folder",
+            position: "top-45 right-50",
+            windowPosition: "top-[20vh] left-7",
+            children: [
+                {
+                    id: 1,
+                    name: "AI Resume Analyzer Project.txt",
+                    icon: "/images/txt.png",
+                    kind: "file",
+                    fileType: "txt",
+                    position: "top-5 right-10",
+                    description: [
+                        "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
+                        "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
+                        "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
+                        "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+                    ],
+                },
+                {
+                    id: 2,
+                    name: "ai-resume-analyzer.com",
+                    icon: "/images/safari.png",
+                    kind: "file",
+                    fileType: "url",
+                    href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+                    position: "top-20 left-20",
+                },
+                {
+                    id: 4,
+                    name: "ai-resume-analyzer.png",
+                    icon: "/images/image.png",
+                    kind: "file",
+                    fileType: "img",
+                    position: "top-52 left-80",
+                    imageUrl: "/images/project-2.png",
+                },
+                {
+                    id: 5,
+                    name: "Code.git",
+                    icon: "/images/plain2.png",
+                    kind: "file",
+                    fileType: "git",
+                    href: "https://google.com",
+                    position: "top-60 left-5",
+                },
+            ],
+        },
+
+        // ▶ Project 3
+        {
+            id: 17,
+            name: "טופ אדיו",
+            icon: "/images/folder.png",
+            kind: "folder",
+            position: "top-10 left-90",
+            windowPosition: "top-[33vh] left-7",
+            children: [
+                {
+                    id: 1,
+                    name: "Animation Studio App Project.txt",
+                    icon: "/images/txt.png",
+                    kind: "file",
+                    fileType: "txt",
+                    position: "top-5 left-10",
+                    description: [
+                        "This is a high-end frontend project focused on strong interactive animations and dynamic UX.",
+                        "The interface comes to life with image tilt effects on mouse hover, creating a sense of depth and motion.",
+                        "Inspired by the award-winning aesthetics of Zentry.com, I built this as a technical homage to their unique style.",
+                        "It’s a showcase of precision coding, where smooth transitions meet complex visual mechanics."
+                    ],
+                },
+                {
+                    id: 2,
+                    name: "animxl.vercel.app",
+                    icon: "/images/safari.png",
+                    kind: "file",
+                    fileType: "url",
+                    href: "https://animxl.vercel.app/",
+                    position: "top-10 right-20",
+                },
+                {
+                    id: 4,
+                    name: "animation-studio.png",
+                    icon: "/images/image.png",
+                    kind: "file",
+                    fileType: "img",
+                    position: "top-52 right-80",
+                    imageUrl: "/images/proj3.png",
+                },
+                {
+                    id: 5,
+                    name: "Code.git",
+                    icon: "/images/plain2.png",
+                    kind: "file",
+                    fileType: "git",
+                    href: "https://github.com/arikxl/animxl",
+                    position: "top-60 right-20",
+                },
+            ],
+        },
+    ],
+};
+
 const ABOUT_LOCATION = {
     id: 2,
     type: "about",
@@ -661,10 +830,11 @@ const TRASH_LOCATION = {
 };
 
 export const locations: Record<string, LocationItem> = {
-    work: WORK_LOCATION,
+    apps: APPS_LOCATION,
     about: ABOUT_LOCATION,
     resume: RESUME_LOCATION,
     trash: TRASH_LOCATION,
+    work: WORK_LOCATION
 };
 
 const INITIAL_Z_INDEX = 1000;
