@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-export default function Time() {
+export default function Time({ isDarkMode }: { isDarkMode: boolean }) {
     const [time, setTime] = useState<Date | null>(null);
 
     useEffect(() => {
@@ -35,7 +35,7 @@ export default function Time() {
     }).format(time);
 
     return (
-        <time className=" text-gray-800">
+        <time className={!isDarkMode ? 'text-white' : 'text-gray-800' }>
             {formattedTime}
         </time>
     );

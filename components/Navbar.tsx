@@ -5,16 +5,24 @@ import Image from 'next/image'
 import Time from './Time'
 import useWindowStore from '@/store/window'
 import { navIcons, navList } from '@/data'
+import { useState } from 'react'
 
 const Navbar = () => {
 
     const { openWindow } = useWindowStore();
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
+    const handleIconClick=(icon)=>{
+        if (icon === 'mode') {
+            setIsDarkMode(!isDarkMode);
+        }
+    }
 
     return (
-        <nav className=''>
+        <nav className={isDarkMode ? 'bg-white/50' : 'bg-gray-800/50 text-white'}>
             <div>
-                <Image alt='apple logo' src={'/images/logo1111.png'} width={30} height={30} />
+                <Image alt='apple logo' src={isDarkMode ? '/images/logo1111.png' :'/images/logo11111.png'}
+                    width={30} height={30} />
                 <p className='font-bold'>arikxl</p>
                 <ul>
                     {
@@ -27,19 +35,21 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <div className='font-light text-amber-300'>
+            <div className='font-light'>
                 <ul>
                     {
-                        navIcons.map(({ id, img }) => (
-                            <li key={id} className='icon-hover'>
+                        navIcons.map(({ id, img, imgW, func}) => (
+                            <li key={id} className='icon-hover' >
                                 <Image 
-                                    alt={`icon-${id}`} src={img} width={20} height={20} />
+                                    alt={`icon-${id}`} src={isDarkMode ? img : imgW} width={20} height={20}
+                                    onClick={() => handleIconClick(func)}
+                                />
                             </li>
                         ))
                     }
                 </ul>
 
-                <Time />
+                <Time isDarkMode={isDarkMode } />
             </div>
         </nav>
     )

@@ -25,18 +25,26 @@ const navIcons = [
     {
         id: 1,
         img: "/icons/wifi.svg",
+        imgW: "/icons/wifiW.svg",
+        func:''
     },
     {
         id: 2,
         img: "/icons/search.svg",
+        imgW: "/icons/searchW.svg",
+        func: ''
     },
     {
         id: 3,
         img: "/icons/user.svg",
+        imgW: "/icons/userW.svg",
+        func: ''
     },
     {
         id: 4,
         img: "/icons/mode.svg",
+        imgW: "/icons/modeW.svg",
+        func: 'mode'
     },
 ];
 
