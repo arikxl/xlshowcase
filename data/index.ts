@@ -244,7 +244,7 @@ const WORK_LOCATION = {
         // ▶ Project 1
         {
             id: 5,
-            name: "Nike Ecommerce Website Application",
+            name: "Tattoo Studio",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-10 left-5", // icon position inside Finder
@@ -252,35 +252,35 @@ const WORK_LOCATION = {
             children: [
                 {
                     id: 1,
-                    name: "Nike Project.txt",
+                    name: "Arik-Tattoo.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-                        "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-                        "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-                        "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+                        "This is a sleek concept website designed for a fictional tattoo studio, demonstrating a premium digital presence.",
+                        "It features an integrated AI tool that allows users to generate unique tattoo sketches instantly.",
+                        "Think of it as a digital playground—combining the moody vibe of a real studio with modern tech to visualize ink ideas.",
+                        "It’s built with React(Vite) and integrates the Pixabay API to fetch gallery images dynamically, ensuring a fresh and diverse portfolio."
                     ],
                 },
                 {
                     id: 2,
-                    name: "nike.com",
+                    name: "arik-tattoo.app",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+                    href: "https://arik-tattoo.vercel.app/",
                     position: "top-10 right-20",
                 },
                 {
                     id: 4,
-                    name: "nike.png",
+                    name: "tattoo.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
                     position: "top-52 right-80",
-                    imageUrl: "/images/project-1.png",
+                    imageUrl: "/images/proj33.jpg",
                 },
                 {
                     id: 5,
@@ -288,7 +288,7 @@ const WORK_LOCATION = {
                     icon: "/images/plain2.png",
                     kind: "file",
                     fileType: "git",
-                    href: "https://google.com",
+                    href: "https://github.com/arikxl/arik-tattoo",
                     position: "top-60 right-20",
                 },
             ],
@@ -297,7 +297,7 @@ const WORK_LOCATION = {
         // ▶ Project 2
         {
             id: 6,
-            name: "AI Resume Analyzer",
+            name: "XLmath",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-52 right-80",
@@ -305,30 +305,30 @@ const WORK_LOCATION = {
             children: [
                 {
                     id: 1,
-                    name: "AI Resume Analyzer Project.txt",
+                    name: "XLmath.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 right-10",
                     description: [
-                        "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-                        "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-                        "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-                        "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+                        "XL Math is a gamified educational web app designed to make practicing arithmetic fun and engaging.",
+                        "Instead of boring worksheets, it motivates users with an XP scoring system, dynamic difficulty, and customizable color themes.",
+                        "Think of it like a digital gym for your brain-where every solved problem earns you points and tracks your progress.",
+                        "Built with LocalStorage, it instantly saves user stats and preferences without needing a backend."
                     ],
                 },
                 {
                     id: 2,
-                    name: "ai-resume-analyzer.com",
+                    name: "xl-math.com",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+                    href: "https://xl-math-yehonathan.vercel.app/",
                     position: "top-20 left-20",
                 },
                 {
                     id: 4,
-                    name: "ai-resume-analyzer.png",
+                    name: "XLmath.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
@@ -341,7 +341,7 @@ const WORK_LOCATION = {
                     icon: "/images/plain2.png",
                     kind: "file",
                     fileType: "git",
-                    href: "https://google.com",
+                    href: "https://github.com/arikxl/xl-math",
                     position: "top-60 left-5",
                 },
             ],
@@ -364,10 +364,10 @@ const WORK_LOCATION = {
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-                        "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-                        "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-                        "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+                        "This is a high-end frontend project focused on strong interactive animations and dynamic UX.",
+                        "The interface comes to life with image tilt effects on mouse hover, creating a sense of depth and motion.",
+                        "Inspired by the award-winning aesthetics of Zentry.com, I built this as a technical homage to their unique style.",
+                        "It’s a showcase of precision coding, where smooth transitions meet complex visual mechanics."
                     ],
                 },
                 {
@@ -524,10 +524,10 @@ const WORK_LOCATION = {
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-                        "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-                        "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-                        "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+                        "This is a high-end frontend project focused on strong interactive animations and dynamic UX.",
+                        "The interface comes to life with image tilt effects on mouse hover, creating a sense of depth and motion.",
+                        "Inspired by the award-winning aesthetics of Zentry.com, I built this as a technical homage to their unique style.",
+                        "It’s a showcase of precision coding, where smooth transitions meet complex visual mechanics."
                     ],
                 },
                 {
@@ -606,10 +606,10 @@ const ABOUT_LOCATION = {
             subtitle: "Meet the Developer Behind the Code",
             image: "/images/arik2.jpg",
             description: [
-                "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-                "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-                "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-                "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+                "Hey! I’m Arik Alexandrov, a Full Stack Developer and Instructor who loves combining logic with creativity.",
+                "I have a huge passion for UI and smooth animations. I love making websites that feel alive.",
+                "I’m also a big fan of AI tools, using them to code faster and help my students learn better.",
+                "When I’m finally offline, I’m usually gaming, hanging out with friends, or just recharging 🔋"
             ],
         },
     ],
@@ -628,8 +628,6 @@ const RESUME_LOCATION = {
             icon: "/images/pdf.png",
             kind: "file",
             fileType: "pdf",
-            // you can add `href` if you want to open a hosted resume
-            // href: "/your/resume/path.pdf",
         },
     ],
 };

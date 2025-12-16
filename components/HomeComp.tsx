@@ -19,8 +19,8 @@ const HomeComp = () => {
   const { setActiveLocation } = useLocationStore();
 
   const handle1openProjectFinder = (project: LocationItem) => {
-    setActiveLocation(project)
-    openWindow('finder')
+    setActiveLocation(project);
+    openWindow('finder');
   }
 
   useGSAP(() => {
